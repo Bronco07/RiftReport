@@ -1,8 +1,49 @@
 # RiftReport
 
-#### Video Demo: <https://youtu.be/vriuB3u5BQ8>
+A Python application that analyzes League of Legends player statistics using the Riot Games API.
 
-#### Description
+## Features
+
+- Retrieve ranked information
+- Display top 3 mastery champions
+- Analyze last 10 matches
+- Calculate average KDA
+- Calculate winrate
+- Find best-performing champion
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Bronco07/RiftReport.git
+```
+
+Move into the project directory:
+
+```bash
+cd RiftReport
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a `.env` file in the project root and add your Riot Games API key:
+
+```env
+RIOT_API_KEY=your_api_key_here
+```
+
+Run the application:
+
+```bash
+python main.py
+```
+
+## Description
 
 RiftReport is a Python application that analyzes a League of Legends player's profile using the Riot Games API. The program allows users to enter a Riot ID and a server, then automatically retrieves information about the player's ranked status, champion mastery, and recent match history. Using these data, the application calculates useful statistics such as winrate, average KDA, and the champion with the highest KDA over the last ten games.
 
@@ -76,19 +117,19 @@ RIOT_API_KEY=your_api_key_here
 Install the required libraries:
 
 ```bash
-pip install requests python-dotenv
+pip install -r requirements.txt
 ```
 
 Then simply run:
 
 ```bash
-python project.py
+python main.py
 ```
 
 or
 
 ```bash
-py project.py
+py main.py
 ```
 
 depending on your Python installation.
