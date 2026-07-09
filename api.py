@@ -10,6 +10,10 @@ def parse_riot_id(riot_id):
 def fetch_account(game_name, tag_line, api_key):
     url = f"https://europe.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{game_name}/{tag_line}?api_key={api_key}"
     response = requests.get(url)
+    
+    print(response.status_code)
+    print(response.text)
+
     if response.status_code != 200:
         sys.exit("Unable to find player")
     return response.json()
