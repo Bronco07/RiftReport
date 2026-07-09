@@ -26,6 +26,7 @@ load_dotenv()
 API_KEY = os.getenv("RIOT_API_KEY")
 
 
+
 def main():
     nickname = input("Enter Riot ID (GameName#TAG): ").strip()
     server = input("Enter server (e.g. eun1): ").strip()
